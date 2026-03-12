@@ -130,7 +130,7 @@ Beispiel:
 ```text
 AWS Access Key ID [None]: AKIA...
 AWS Secret Access Key [None]: geheim...
-Default region name [None]: eu-central-1
+Default region name [None]: us-east-1
 Default output format [None]: json
 ```
 
@@ -146,7 +146,7 @@ Diese Variante ist besonders wichtig, wenn die Sandbox **temporäre Credentials*
 export AWS_ACCESS_KEY_ID="DEIN_ACCESS_KEY"
 export AWS_SECRET_ACCESS_KEY="DEIN_SECRET_KEY"
 export AWS_SESSION_TOKEN="DEIN_SESSION_TOKEN"
-export AWS_DEFAULT_REGION="eu-central-1"
+export AWS_DEFAULT_REGION="us-east-1"
 ```
 
 ### Windows PowerShell
@@ -155,7 +155,7 @@ export AWS_DEFAULT_REGION="eu-central-1"
 $env:AWS_ACCESS_KEY_ID="DEIN_ACCESS_KEY"
 $env:AWS_SECRET_ACCESS_KEY="DEIN_SECRET_KEY"
 $env:AWS_SESSION_TOKEN="DEIN_SESSION_TOKEN"
-$env:AWS_DEFAULT_REGION="eu-central-1"
+$env:AWS_DEFAULT_REGION="us-east-1"
 ```
 
 ### Test
@@ -233,7 +233,7 @@ Datei: `variables.tf`
 variable "aws_region" {
   description = "AWS Region"
   type        = string
-  default     = "eu-central-1"
+  default     = "us-east-1"
 }
 ```
 
@@ -296,7 +296,7 @@ Datei: `variables.tf`
 ```hcl
 variable "aws_region" {
   type    = string
-  default = "eu-central-1"
+  default = "us-east-1"
 }
 
 variable "ami_id" {
@@ -418,7 +418,7 @@ Datei: `variables.tf`
 ```hcl
 variable "aws_region" {
   type    = string
-  default = "eu-central-1"
+  default = "us-east-1"
 }
 
 variable "ami_id" {
